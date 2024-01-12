@@ -22,7 +22,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware('auth')->prefix('')->group(
+Route::middleware('auth')->prefix('seller')->group(
     function () {
         Route::get('/', [SellerController::class,'index'])->name('seller.index');
         Route::get('/create', [SellerController::class,'create'])->name('seller.create');
