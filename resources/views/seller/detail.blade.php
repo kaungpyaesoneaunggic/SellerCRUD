@@ -10,20 +10,17 @@
                     <div class="">
                         <div class="mb-3 mt-3">
                             <label  class="form-label">Name</label>
-                            <input name="name" class="form-control " value="{{ $seller->name }}">
+                            <input name="name" class="form-control " value="{{ $seller->name }}" disabled>
                         </div>
                         <div class="mb-3">
                             <label  class="form-label">Township</label>
-                            <input name="township" class="form-control" value="{{ $seller->township }}">
+                            <input name="township" class="form-control" value="{{ $seller->township }}" disabled>
                         </div>
                         <div class="mb-3">
-                            <label  class="form-label">Rating</label>
+                            <label  class="form-label" disabled>Rating</label>
                             <select name="rating">
                                 <option value="none">{{ $seller->rating }}</option>
                             </select>
-                            @error('rating')
-                                <div class="text-danger">*{{ $message }}</div>
-                            @enderror
                         </div>
                         <div class="mb-4 text-center">
                                 <a href="{{ route('seller.index') }}"  class="btn btn-lg btn-outline-dark">Back</a>
