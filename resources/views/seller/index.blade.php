@@ -7,10 +7,10 @@
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body col-md-12">
+                <div class="card-body col-md-8">
                     <h1>Here are store ratings</h1>
                 </div class="">
-                    <table class="table mx-5 justify-content-center">
+                    <table class="table justify-content-center">
                         <thead>
                           <tr >
                             <th scope="col">id</th>
