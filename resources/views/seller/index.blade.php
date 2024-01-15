@@ -11,14 +11,14 @@
                     <h1>Here are store ratings</h1>
                 </div class="">
                 <a href="{{ route('seller.create') }}" class="btn btn-outline-success mx-5"><i class="fa fa-add"></i></a>
-                    <table class="table mx-auto" style="width: 85%">
+                    <table class="table mx-auto" style="width: 80%">
                         <thead>
                           <tr >
                             <th scope="col">id</th>
                             <th scope="col">Name</th>
                             <th scope="col">Township</th>
                             <th scope="col">Rating</th>
-                            <th scope="col mx-auto" style="width: 150px;">Action</th>
+                            <th scope="col" class="pl-3" style="width: 150px">Action</th>
                           </tr>
                           </thead>
                           <tbody>
