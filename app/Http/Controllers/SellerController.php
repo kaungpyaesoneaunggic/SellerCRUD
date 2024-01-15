@@ -9,6 +9,14 @@ use Illuminate\Http\Request;
 
 class SellerController extends Controller
 {
+
+    public function __construct(){
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+    // public function __destruct(){
+    //     return 1;
+    // }
+
     /**
      * Display a listing of the resource.
      *

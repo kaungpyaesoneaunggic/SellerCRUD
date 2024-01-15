@@ -10,14 +10,15 @@
                 <div class="card-body col-md-8">
                     <h1>Here are store ratings</h1>
                 </div class="">
-                    <table class="table justify-content-center">
+                <a href="{{ route('seller.create') }}" class="btn btn-outline-success mx-5"><i class="fa fa-add"></i></a>
+                    <table class="table mx-auto" style="width: 85%">
                         <thead>
                           <tr >
                             <th scope="col">id</th>
                             <th scope="col">Name</th>
                             <th scope="col">Township</th>
                             <th scope="col">Rating</th>
-                            <th scope="col ">Action</th>
+                            <th scope="col mx-auto" style="width: 150px;">Action</th>
                           </tr>
                           </thead>
                           <tbody>
@@ -44,9 +45,9 @@
                                   
                                 </tr>
                               @endforeach
-                              <a href="{{ route('seller.create') }}" class="btn btn-outline-success mx-5">+</i></a>
                            </tbody>
                         </table>
+                        
                     </div>
                 </div>
             </div>
